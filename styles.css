@@ -1,0 +1,928 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: Arial;
+    color: #0b0101;
+    line-height: 1.6;
+}
+
+nav .nav-links button {
+    background-color: #f60;
+    color: bo#fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+nav .nav-links button:hover {
+    background-color:#666;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #666;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Container for consistent padding */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.auth-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.auth-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-auth {
+    padding: 10px 20px;
+    background-color: #f60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-auth:hover {
+    background-color: #666;
+}
+
+.auth-container p {
+    margin-top: 20px;
+}
+
+.auth-container p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.auth-container p a:hover {
+    text-decoration: underline;
+}
+/* Header styles */
+header {
+    background: #fff;
+    color: #333;
+    padding: 10px 0;
+}
+
+header .logo {
+    display:inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+    justify-content: center;
+}
+
+header nav {
+    display: inline-block;
+    float : right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Booking List Styles */
+.bookingList {
+    padding: 20px;
+}
+
+.bookingList h2 {
+    margin-top: 60px; /* Space for the fixed header */
+    text-align: center;
+}
+
+.bookingDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-card {
+    background: #0e0d0d;
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.booking-card h3 {
+    margin: 0 0 10px;
+}
+/*tour*/
+.tours {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.tours h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #0b0101;
+}
+
+.tour-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tour-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tour-item:hover {
+    transform: translateY(-10px);
+}
+
+.tour-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-item h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.tour-item p {
+    padding: 0 15px;
+    font-size: 1em;
+    color: #0b0101;
+}
+
+.tour-item a {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background: #f60;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.tour-item a:hover {
+    background: #666;
+}
+.destination,.blogs, .guides, .contact {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.destination h1,.blogs h1, .guides h1, .contact h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.destination-grid, .blog-grid, .guide-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+/*guides ,contact*/
+
+.destination-item, .blog-item, .guide-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.destination-item:hover, .blog-item:hover, .guide-item:hover {
+    transform: translateY(-10px);
+}
+
+.destination-item img, .blog-item img, .guide-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-item h2,.blog-item h2, .guide-item h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.destination-item p,.blog-item p, .guide-item p {
+    padding: 0 15px;
+    font-size: 1em;
+    color: #666;
+}
+
+.destination-item a,.blog-item a, .guide-item a {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background: #f60;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.destination-item a:hover, .blog-item a:hover, .guide-item a:hover {
+    background: #666;
+}
+/* Styles for the contact section */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f60;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #666;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url('bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #131212;
+    text-align: center;
+    margin-top: 70px; /* Adjust for fixed header */
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #f60;
+    color:#0b0101;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #666;
+}
+/* Popular destinations styles */
+.popular-destinations h2,
+.special-offers h2,
+.testimonials h2,
+.newsletter-signup h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popular-destinations .grid,
+.special-offers .carousel {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.popular-destinations .destination,
+.special-offers .offer {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.popular-destinations .destination img,
+.special-offers .offer img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.popular-destinations .destination h3,
+.special-offers .offer h3 {
+    margin: 15px 0 10px;
+}
+
+.popular-destinations .destination button,
+.special-offers .offer button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-links a,
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+}
+/*LEARN MORE */
+.learn-more {
+    background-color:#f60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    background-color: #666;
+}
+.destination-details {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination-details h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.destination-details p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.destination-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.destination-images img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+    .destination-images img {
+        width: 48%;
+    }
+}
+
+@media (min-width: 900px) {
+    .destination-images img {
+        width: 32%;
+    }
+}
+/* Special Offers Styles */
+.special-offers {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+   
+    
+}
+
+.special-offers h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.offers-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.offer {
+    flex: 1 1 30%;
+   
+    padding: 20px;
+    margin: 10px;
+   
+    text-align: center;
+}
+
+.offer h3 {
+    margin-bottom: 10px;
+}
+
+.offer p {
+    margin-bottom: 10px;
+}
+
+.offer a {
+    color: #0b0101;
+    text-decoration: none;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .offer {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .offer {
+        flex: 1 1 100%;
+    }
+}
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.testimonials {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: serif;
+    color: #312b2b;
+    margin-bottom: 15px;
+}
+
+.testimonial h4 {
+    margin: 10px 0 5px;
+    color: #241e1e;
+}
+
+.testimonial span {
+    color: #291f1f;
+}
+
+/* Tour detail section styling */
+.tour-detail {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tour-detail h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0b0101;
+}
+
+.tour-detail p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #312929;
+}
+
+.tour-detail ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #312929;
+}
+
+.tour-detail ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.tour-detail a {
+    display: inline-block;
+    background-color: #f60; /* Blue color for the button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.tour-detail a:hover {
+    background-color: #666; /* Darker blue color on hover */
+}
+
+/* Image styling */
+.tour-detail img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/* Styles for the guide detail pages */
+.guide-detail {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.guide-detail h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0b0101;
+}
+
+.guide-detail p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #312b2b;
+}
+
+.guide-detail ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #312b2b;
+}
+
+.guide-detail ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.guide-detail a {
+    display: inline-block;
+    background-color: #f60; /* Blue color for the button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.guide-detail a:hover {
+    background-color: #666; /* Darker blue color on hover */
+}
+
+/* Image styling */
+.guide-detail img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/* Styles for the blog detail pages */
+/* Styles for the blog detail pages */
+.blog-detail {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-detail h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0b0101;
+}
+
+.blog-detail p, .blog-detail li {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #322e2e;
+}
+
+.blog-detail ul, .blog-detail ol {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #322e2e;
+}
+
+.blog-detail ul li, .blog-detail ol li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.blog-detail a {
+    display: inline-block;
+    background-color: #f60 ;/* Blue color for the button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.blog-detail a:hover {
+    background-color: #666; /* Darker blue color on hover */
+}
+
+/* Image styling */
+.blog-detail img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/* General Styles for Offer Pages */
+.offer-page {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.offer-page h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.offer-details {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.offer-details img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.offer-details h2 {
+    margin-bottom: 15px;
+    color: #0b0101;
+}
+
+.offer-details p {
+    margin-bottom: 15px;
+    color: #322c2ced;
+}
+
+.offer-details ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+    color: #322c2ced;
+}
+
+.offer-details ul li {
+    margin-bottom: 10px;
+}
+
+.offer-details .button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.offer-details .button-container a {
+    display: inline-block;
+    background-color: #f60; /* Blue color for the button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.offer-details .button-container a:hover {
+    background-color: #666; /* Darker blue color on hover */
+}

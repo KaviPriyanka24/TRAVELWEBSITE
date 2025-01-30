@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guides</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <!-- Header -->
+   <header>
+    <div class="container">
+        <div class="logo">kiddy's Adventure</div>
+         
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-links">
+                <button id="loginBtn">Login</button>
+                <button id="signupBtn">Sign Up</button>
+                <button id="bookNowBtn">Book Now</button>
+            </div>
+    
+    </nav>
+    </header>
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" data-close="loginModal">&times;</span>
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- Signup Modal -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" data-close="signupModal">&times;</span>
+        <h2>Sign Up</h2>
+        <form action="signup.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+<!-- Book Now Modal -->
+<div id="bookNowModal" class="modal">
+    <div class="modal-content">
+        <span class="close" data-close="bookNowModal">&times;</span>
+        <h2>Book Now</h2>
+        <form action="booknow.php" method="POST">
+            <input type="text" name="destination" placeholder="Destination" required>
+            <input type="date" name="date" required>
+            <input type="number" name="guests" placeholder="Number of Guests" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</div>
+
+    <script src="scripts.js"></script>
+
+    <!-- Main Content -->
+    <main>
+        <section class="guides">
+            <div class="container">
+                <h1>Our Guides</h1>
+                <div class="guide-grid">
+                    <div class="guide-item">
+                        <img src="guide1.jpg" alt="Guide 1">
+                        <h2>John Doe</h2>
+                        <p>Expert in European tours with 10 years of experience...</p>
+                        <a href="guide1.html">View Profile</a>
+                    </div>
+                    <div class="guide-item">
+                        <img src="guide2.jpg" alt="Guide 2">
+                        <h2>Jane Smith</h2>
+                        <p>Specializes in Asian destinations, fluent in multiple languages...</p>
+                        <a href="guide2.html">View Profile</a>
+                    </div>
+                    <div class="guide-item">
+                        <img src="guide3.jpg" alt="Guide 3">
+                        <h2>Mike </h2>
+                        <p>Adventure tours expert, knows the best hiking trails...</p>
+                        <a href="guide3.html">View Profile</a>
+                    </div>
+                    <!-- Add more guide items as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="blogs.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </div>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+            <div class="contact-info">
+                <p>123 Travel St, Adventure City, World</p>
+                <p>+123 456 7890</p>
+                <p>info@traveladventure.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

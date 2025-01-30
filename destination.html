@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <!-- Other nav links -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="destination-details">
+        <h1 id="destination-title">Destination Title</h1>
+        <p id="destination-description">Destination description goes here.</p>
+        <div id="destination-images" class="destination-images"></div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const destinationId = urlParams.get('id');
+
+            if (destinationId === '1') {
+                document.getElementById('destination-title').textContent = 'Goa';
+                document.getElementById('destination-description').textContent = 'Goa, the party destination in India, attracts tourists from all across the world. The smallest state in the country is the place where you should head if you are in a mood to have some real fun. From indulging in adventure sports at the beaches to visiting the casinos, from shopping in the open markets to taking a tour of the forts and churches, there are lots of things to do in Goa. You will not be bored even for a minute when you are there. If you are getting in the mood to plan a road trip to Goa ,       Best time to travel: October to February is the best time to travel to Goa. The other months can give you a lot of tanning and you will not be able to enjoy it to the fullest because of the heat.<br>Shopping tips: You will get a lot of opportunities to indulge in shopping in Goa. However, make sure you improve your bargaining skills before going to the open markets.Accommodation: You need to be least bothered about the                      accommodation part in Goa as the state is filled with some of the best hotels and resorts in the country. You can also opt for homestays if you want. Conveyance: Scooters are easily available in Goa. However, if you are traveling with a group of friends, it is always advisable to get a self-drive car. Getting a self-drive car will make things easier for you.Goa has 75 miles of coastline and several beaches. You can visit the beaches surrounded by verdant palm trees while the shores are turquoise. You can enjoy your time in the water or basking under the sun at the beaches. As a matter of fact, you can spend your entire day on the beach and still, you will love every minute.                       Beaches in Goa: Calangute beach, Palolem beach, Baga beach, Anjuna beach, Candolim beach, Arambol beach, Agonda beach, Morjim beach, and Miramar beach';    
+                
+                const images = [
+                    'd-img1.jpg',
+                    'd-img2.jpg',
+                    'd-img3.jpg'
+                ];
+
+
+                const imageContainer = document.getElementById('destination-images');
+                images.forEach(src => {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.alt = 'Goa';
+                    imageContainer.appendChild(img);
+                });
+            } else if (destinationId === '2') {
+                document.getElementById('destination-title').textContent = 'KERALA';
+                document.getElementById('destination-description').textContent = 'Keralan regional cuisine includes Keralan fish curry, Karimeen pollichathu (fried fish), Fish moilee, Malabar Parotta (pancakes), pumpkin and lentil curry and Palada payasam, a rice dessert flavoured with cardamom. Your food might come served on a large green banana leaf and be accompanied by delicious homemade appam, roti or dosa bread.You can really engage with Keralan cuisine by taking part in a local cooking demonstration, where you’ll be shown how dishes are prepared before getting to sample them for yourself.You can really engage with Keralan cuisine by taking part in a local cooking demonstration, where you’ll be shown how dishes are prepared before getting to sample them for yourself.The wonderful Kerala backwaters are a labyrinthine network of lagoons, lakes, interconnected canals, rivers, and inlets formed by more than 900 kilometres of waterways and are a must-see on any trip to this state. Glide along the tranquil waters to see villagers working at the water’s edge, passing wildlife and workers toiling in the paddy fields.For a truly magical experience, you can spend the night aboard your own private houseboat. You can gently drift along while your own private crew prepare and serve your meals. The houseboat moors at night to prevent getting tangled in nearby fishing nets, and you can experience the bliss of being rocked gently to sleep after watching the twinkling stars.Kerala is home to a wide variety of animals such as the Asian Elephant, Bengal Tiger, Leopard, Sambar Deer, Langurs, Flying Squirrels and around 453 varieties of birds including rare species such as the Indian Grey Hornbill and Oriental Bay Owl.One of the largest sanctuaries in Kerala is Periyar National Park which you can explore on foot, jeep, boat or raft and where you might be able to catch a glimpse of a tiger if you’re lucky. The Western Ghats is a wildlife lover’s paradise, as it is home to fourteen wildlife sanctuaries surrounded by trekking trails. Elsewhere there is a variety of bird and wildlife sanctuaries to explore, along with the chance to spot monkeys by the side of the road!Grab a cuppa for the next item on our 10 reasons to visit Kerala. A highlight of any visit to Kerala is the chance to look around a spice, coffee or tea plantation. You can learn about how aromatic regional spices, refreshing tea and speciality coffee is grown, and get the chance to sample them too.One of the advantages of visiting a coastal state is the opportunity to spend some time on wonderful beaches. The beaches of Kerala are very well kept and offer wonderful views. You can relax in a hammock, sunbathe or enjoy a spectacular sunset. And if you’re a fan of watersports, you’ll find kayaking, canoeing, scuba diving and snorkelling, parasailing, windsurfing and water skiing all on offer.';
+
+                const images = [
+                    'd-img4.jpg',
+                    'd-img5.jpg',
+                    'd-img6.jpg'
+                ];
+
+                const imageContainer = document.getElementById('destination-images');
+                images.forEach(src => {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.alt = 'Destination 2';
+                    imageContainer.appendChild(img);
+                });
+            }
+            else if (destinationId === '3') {
+                document.getElementById('destination-title').textContent = 'FINLAND';
+                document.getElementById('destination-description').textContent = 'Finland’s vast wilderness, and natural landscapes, including thousands of lakes and forests, have remained untouched for centuries. ‘Right to Roam, a custom codified into law in Europe, allows you to truly enjoy Finlands natural beauty. You can enjoy hiking, fishing, picking berries and mushrooms, and more without permission from the landowner or authorities, as long as you don’t damage the environment or anyone’s property.The Finnish Lapland is one of the best places in the world to see the Northern Lights. You cannot help but be wonderstruck by the night sky as it turns into beautiful shades of green, pink, blue, and turquoise. The region is above the Arctic Circle, where the Aurora Borealis is visible for up to 200 nights a year. Staying in glass igloos is a beautiful way to enjoy the Northern Lights, as they keep you warm while you take in the beautiful sight. Oulanka National Park is another admired spot, home to impressive rapids, canyons, and waterfalls. The country vast wilderness areas have many species of animals, including reindeer, elk, lynx, wolves, and brown bears.You should also consider visiting the Archipelago National Park. It makes for an unforgettable experience with thousands of islands and islets, where you can explore the rugged coastline, kayak through narrow channels, or take a ferry to one of the larger islands. Finland is known to have a safe and hospitable environment, making it an ideal and safe destination for families to enjoy a relaxing holiday. The country has been consistently featured on top by the World Happiness Report for six years, thanks to its progressive social policies and high quality of life. Visit Finland to experience the joy and gracious hospitality of the country and its people.Finland is often addressed as the “land of the midnight sun” since the sun never sets in the country during the summer months of May to August. When you travel to Finland, you can enjoy midnight sun cruises that take tourists out sailing to enjoy the stunning views of the sun on the horizon. During spring and summer, you can enjoy the midnight sun and make the most of many Finland tourist attractions, like hiking, biking, fishing, kayaking, and boating. The Finnish lakes are beautiful during summer. In autumn, the countrys landscapes transform into stunning colours, with trees changing into vibrant red, yellow, and orange hues. Its a great time to explore the Finnish wilderness and pick mushrooms and berries.A total of 39 national parks offer ideal locations for cyclists, hikers, ramblers, dog walkers, campers, or anyone looking to get back to nature. These parks also offer stunning views, adventure-holiday packages and chances to spot unique wildlife.Finland is the 17th safest country in the world, according to World Atlas, and Helsinki is the second-safest city. Violent crime is incredibly rare, especially during the perpetual daylight in the summer months. In fact, the biggest danger here isn’t the people; it’s slipping on ice during the winter.';
+
+                const images = [
+                    'd-img7.jpg',
+                    'd-img8.jpg',
+                    'd-img9.jpg',
+                    
+                ];
+
+                const imageContainer = document.getElementById('destination-images');
+                images.forEach(src => {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.alt = 'Destination 3';
+                    imageContainer.appendChild(img);
+                });
+            }
+
+
+            // Add more conditions for other destinations if needed
+        });
+    </script>
+</body>
+</html>

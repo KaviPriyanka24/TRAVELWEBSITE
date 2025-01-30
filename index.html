@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="logo"> kiddy'sAdventure</div>
+                   <nav>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="nav-links">
+                        <button id="loginBtn">Login</button>
+                        <button id="signupBtn">Sign Up</button>
+                        <button id="bookNowBtn">Book Now</button>
+                    </div>
+                </nav>
+            </header>
+        
+            <!-- Login Modal -->
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="loginModal">&times;</span>
+                    <h2>Login</h2>
+                    <form action="login.php" method="POST">
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        
+            <!-- Signup Modal -->
+            <div id="signupModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="signupModal">&times;</span>
+                    <h2>Sign Up</h2>
+                    <form action="signup.php" method="POST">
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        
+            <!-- Book Now Modal -->
+            <div id="bookNowModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="bookNowModal">&times;</span>
+                    <h2>Book Now</h2>
+                    <form action="booknow.php" method="POST">
+                        <input type="text" name="destination" placeholder="Destination" required>
+                        <input type="date" name="date" required>
+                        <input type="number" name="guests" placeholder="Number of Guests" required>
+                        <button type="submit">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        
+            <script src="scripts.js"></script>
+    <!-- Hero Section -->
+    <section class="hero">
+    
+
+        <div class="hero-content">
+            <h1>Explore the World with Us</h1>
+            <p>Discover amazing places at exclusive deals</p>
+            <a href="offer1.html" class="btn">Explore Offers</a>
+        </div>
+    </section>
+    
+
+    
+    <!-- Popular Destinations Section -->
+    <section class="popular-destinations">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="grid">
+                <!-- Repeat for each destination -->
+                <div class="destination">
+                    <img src="destination1.jpg" alt="GOA">
+                    <h3>GOA</h3>
+                    <p>Explore the beautiful beaches and rich cultural heritage of Goa.</p>
+                    <a href="destination.html?id=1"  class="btn">Learn More</a>
+                </div>
+                <div class="destination">
+                    <img src="destination2.jpg" alt="KERALA">
+                    <h3>KERALA</h3>
+                    <p>Experience the mesmerizing backwaters, ecotourism initiatives.</p>
+                    <a href="destination.html?id=2"  class="btn">Learn More</a>
+                </div>
+                <div class="destination">
+                    <img src="destination3.jpg" alt="FINLAND">
+                    <h3>FINLAND</h3>
+                    <p>Explote the happiest country in the world. it includs canoeing, climbing and snowshoeing.</p>
+                    <a href="destination.html?id=3"  class="btn">Learn More</a>
+                </div>
+                
+                <!-- Repeat block ends -->
+            </div>
+        </div>
+    </section>
+    <script src="scripts1.js"></script>
+    <!-- Special Offers Section -->
+    <section class="special-offers">
+        <h2>Special Offers</h2>
+        <div class="offers-container">
+            <div class="offer" id="offer1">
+                <img src="offer1.jpg" alt="OFFER1">
+                <h3>Early Bird Discount</h3>
+                <p>Book your trip at least 3 months in advance and enjoy a 20% discount on all our tours and packages.</p>
+                <a href="offer1.html"  class="btn">Learn More</a>
+            </div>
+            <div class="offer" id="offer2">
+                <img src="offer2.jpg" alt="OFFER2">
+                <h3>Family Package Special</h3>
+                <p>Book a family package for 4 or more and get a special discount along with free activities for kids.</p>
+                <a href="offer2.html"  class="btn">Learn More</a>
+                
+                
+            </div>
+            <div class="offer" id="offer3">
+                <img src="offer3.jpg" alt="OFFER3">
+                <h3>Last-Minute Getaway Deals</h3>
+                <p>Enjoy up to 30% off on select destinations with our last-minute getaway deals.</p>
+                 <a href="offer3.html"  class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script3.js"></script>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"The best travel experience ever! Everything was well-organized and the staff was fantastic. Highly recommend!"</p>
+                <h4>Jane Doe</h4>
+                <span>Traveler</span>
+            </div>
+            <div class="testimonial">
+                <p>"An unforgettable trip! The itinerary was perfect and the accommodations were top-notch. Will definitely book again."</p>
+                <h4>John Smith</h4>
+                <span>Adventurer</span>
+            </div>
+            <div class="testimonial">
+                <p>"Excellent service from start to finish. The travel guides were knowledgeable and the destinations were breathtaking."</p>
+                <h4>Emily Johnson</h4>
+                <span>Explorer</span>
+            </div>
+            <div class="testimonial">
+                <p>"Great value for money! The trip exceeded all my expectations and the customer service was outstanding."</p>
+                <h4>Michael Brown</h4>
+                <span>Vacationer</span>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="blogs.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </div>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+            <div class="contact-info">
+                <p>123 Travel St, Adventure City, World</p>
+                <p>+123 456 7890</p>
+                <p>info@traveladventure.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

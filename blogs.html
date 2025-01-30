@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <!-- Header -->
+   <header>
+    <div class="container">
+        <div class="logo">kiddy's  Adventure</div>
+         
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="blogs.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-links">
+                <button id="loginBtn">Login</button>
+                <button id="signupBtn">Sign Up</button>
+                <button id="bookNowBtn">Book Now</button>
+            </div>
+    
+    </nav>
+    </header>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-close="loginModal">&times;</span>
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-close="signupModal">&times;</span>
+            <h2>Sign Up</h2>
+            <form action="signup.php" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Book Now Modal -->
+    <div id="bookNowModal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-close="bookNowModal">&times;</span>
+            <h2>Book Now</h2>
+            <form action="booknow.php" method="POST">
+                <input type="text" name="destination" placeholder="Destination" required>
+                <input type="date" name="date" required>
+                <input type="number" name="guests" placeholder="Number of Guests" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+    <!-- Main Content -->
+    <main>
+        <section class="blogs">
+            <div class="container">
+                <h1>Travel Blogs</h1>
+                <div class="blog-grid">
+                    <div class="blog-item">
+                        <img src="blog1.jpg" alt="Blog 1">
+                        <h2>Top 10 Destinations for 2024</h2>
+                        <p>Discover the best travel destinations for the upcoming year...</p>
+                        <a href="blog1.html">Read More</a>
+                    </div>
+                    <div class="blog-item">
+                        <img src="blog2.jpg" alt="Blog 2">
+                        <h2>Travel Tips for Solo Travelers</h2>
+                        <p>Everything you need to know about traveling solo...</p>
+                        <a href="blog2.html">Read More</a>
+                    </div>
+                    <div class="blog-item">
+                        <img src="blog3.jpg" alt="Blog 3">
+                        <h2>How to Pack Like a Pro</h2>
+                        <p>Packing tips and tricks to maximize your luggage space...</p>
+                        <a href="blog3.html">Read More</a>
+                    </div>
+                    <!-- Add more blog items as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="blogs.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            
+            <div class="contact-info">
+                <p>123 Travel St, Adventure City, World</p>
+                <p>+123 456 7890</p>
+                <p>info@traveladventure.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
